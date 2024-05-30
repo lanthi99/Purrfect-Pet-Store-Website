@@ -1,0 +1,44 @@
+<%- include('partial/header') %>
+<main>
+  <div id="menu" class="menu">
+    <a href="/home">Home</a>
+    <hr class="thinLine" />
+    <a href="/find">Find a dog/cat</a>
+    <hr class="thinLine" />
+    <a href="/dog">Dog Care</a>
+    <hr class="thinLine" />
+    <a href="/cat">Cat Care</a>
+    <hr class="thinLine" />
+    <a href="/giveawaylogin"> Have a pet to give away</a>
+    <hr class="thinLine" />
+    <a href="/contact">Contact Us</a>
+    <hr class="thinLine" />
+    <a href="/create">Create an account</a>
+    <hr class="thinLine" />
+    <a href="/logout">Log Out</a>
+  </div>
+  <h2>Create an account</h2>
+
+  <div id="create" class="create">
+    <form action="/create" method="POST">
+      <label for="name">Name:</label> <br />
+      <input type="text" id="username" name="username" required />
+      <ul id="nameReq">
+        <li>Can contain uppercase and lowercase letters and digits only</li>
+      </ul>
+      <br />
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" required />
+      <ul id="passwordReq">
+        <li>At least 4 characters long</li>
+        <li>Containing letters and digits only</li>
+        <li>At least 1 letter</li>
+        <li>At least 1 digit</li>
+      </ul>
+      <br />
+      <br />
+      <button type="submit">Create</button>
+    </form>
+  </div>
+</main>
+<%- include('partial/footer') %>

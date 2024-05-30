@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Node.js User Input Example</title>
+    <meta charset="utf-8" />
+    <style>
+      p {
+        font-size: px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: blue;
+      }
+      body {
+        padding-left: 20px;
+      }
+      button {
+        text-decoration: underline;
+        background: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Assigment 3</h1>
+    <h2>Exercice 1</h2>
+    <h3>A. Find summation of numbers from 1 to N</h3>
+    <p>Parameter(s): a positive integer number (default value is = 1)</p>
+    <form action="/Function1" method="POST">
+      <input
+        type="text"
+        name="num1"
+        placeholder="Enter a positive integer N"
+        size="30"
+      />
+      <input type="submit" name="submit" value="Calculate the sum" />
+    </form>
+
+    <h3>B. Uppercase the first and the last letter of a word</h3>
+    <p>Parameter(s): string</p>
+    <form action="/Function2" method="POST">
+      <input type="text" name="word" placeholder="Enter a word" size="30" />
+
+      <input
+        type="submit"
+        name="submit"
+        value="Uppercase first and last letter"
+      />
+    </form>
+
+    <h3>C. Find the average and median of a serie of numbers</h3>
+    <p>Parameter(s): an array of numbers</p>
+    <form action="/Function3" method="POST">
+      <input
+        type="text"
+        name="numArr"
+        placeholder="Enter a serie of numbers separated by commnas"
+        size="50"
+      />
+      <input type="submit" name="submit" value="Calculate average and median" />
+    </form>
+
+    <h3>D. Find the first four-digit number</h3>
+    <p>Parameter(s): a string of numbers separated by spaces</p>
+    <form action="/Function4" method="POST">
+      <input
+        type="text"
+        name="numString"
+        placeholder="Enter a text with number"
+        size="30"
+      />
+
+      <input
+        type="submit"
+        name="submit"
+        value="Find the first four-digit number"
+      />
+    </form>
+
+    <h2>Exercice 2</h2>
+    <form action="/Exercice2" method="POST">
+      Follow <button type="submit" name="submit">the link</button> to see how
+      many times you visit this site
+    </form>
+
+    <h2>Exercice 3</h2>
+    <form action="/Exercice3" method="POST">
+      <input type="text" name="names" placeholder="Enter your name" size="30" />
+      <br /><br />
+      <input
+        type="text"
+        name="telephone"
+        placeholder="Enter your telephone numbers"
+        size="30"
+      />
+      <br /><br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+    <h2><a href="/home">Exercice 4</a></h2>
+  </body>
+</html>

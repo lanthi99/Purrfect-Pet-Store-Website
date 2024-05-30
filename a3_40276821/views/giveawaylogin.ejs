@@ -1,0 +1,124 @@
+<%- include('partial/header') %>
+<main>
+  <div id="menu" class="menu">
+    <a href="/home">Home</a>
+    <hr class="thinLine" />
+    <a href="/find">Find a dog/cat</a>
+    <hr class="thinLine" />
+    <a href="/dog">Dog Care</a>
+    <hr class="thinLine" />
+    <a href="/cat">Cat Care</a>
+    <hr class="thinLine" />
+    <a href="/giveawaylogin"> Have a pet to give away</a>
+    <hr class="thinLine" />
+    <a href="/contact">Contact Us</a>
+    <hr class="thinLine" />
+    <a href="/create">Create an account</a>
+    <hr class="thinLine" />
+    <a href="/logout">Log Out</a>
+  </div>
+
+  <div id="giveaway" class="content">
+    <h2>Giveaway a pet</h2>
+    <form name="myForm2" action="/giveawaylogin" method="POST">
+      <p>Type of pet:</p>
+      <input type="radio" id="dog" value="dog" name="name2" value="Dog" />
+      <label for="dog">Dog</label>
+      <input type="radio" id="cat" value="cat" name="name2" value="Cat" />
+      <label for="cat">Cat</label> <br />
+      <p>Breed:</p>
+      <input
+        type="radio"
+        id="breed1"
+        value="British Short Hair"
+        name="breed2"
+      />
+      <label for="breed1">British Short Hair</label>
+      <input type="radio" id="breed2" value="Bulldog" name="breed2" />
+      <label for="breed2">Bulldog</label> <br />
+      <input type="radio" id="breed3" value="Mix breed" name="breed2" />
+      <label for="breed3">Mix breed</label>
+      <p>Age of animal</p>
+      <select name="age" id="age2">
+        <option value="none">Choose an age</option>
+        <option value="0-1">0-1</option>
+        <option value="1-3">1-3</option>
+        <option value="3-5">3-5</option>
+        <option value="5+">5+</option>
+      </select>
+      <p>Animal gender:</p>
+      <input type="radio" id="male" value="male" name="gender2" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" value="female" name="gender2" />
+      <label for="female">Female</label>
+      <p>Is your animal:</p>
+      <input
+        type="checkbox"
+        id="children2"
+        name="options"
+        value="get along with small children"
+      />
+      <label for="children2">Suitable for a family with small children</label>
+      <br />
+      <input
+        type="checkbox"
+        id="otherdogs2"
+        name="options"
+        value="get along with other dogs"
+      />
+      <label for="otherdogs2">Suitable for a family with other dogs</label>
+      <br />
+      <input
+        type="checkbox"
+        id="othercats2"
+        name="options"
+        value="get along with other cats"
+      />
+      <label for="othercats2">Suitable for a family with other cats</label>
+      <br />
+      <input type="checkbox" id="none2" name="options" value="none" />
+      <label for="none2">None</label>
+      <br />
+      <p>Comment</p>
+      <textarea name="comment2" id="comment2" cols="50" rows="10"></textarea>
+      <br />
+      <br />
+      <p>Current owner's name:</p>
+      <label for="lastname">Last name:</label>
+      <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        style="width: 300px; height: 20px"
+      />
+      <br />
+      <br />
+      <label for="firstname">First name:</label>
+      <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        style="width: 300px; height: 20px"
+      />
+      <br />
+      <br />
+      <label for="email"><u>Current owner's email:</u> </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        style="width: 300px; height: 20px"
+      />
+      <br />
+      <br />
+      <input type="reset" value="Reset" />
+      <input
+        type="submit"
+        name="submit"
+        value="Submit"
+        onclick="validateGiveaway()"
+      />
+    </form>
+  </div>
+</main>
+<%- include('partial/footer') %>

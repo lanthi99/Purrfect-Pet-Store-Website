@@ -1,0 +1,376 @@
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(Balonku-Regular.ttf);
+}
+
+@font-face {
+  font-family: myFont2;
+  src: url(FeDPrm2.ttf);
+}
+
+h1 {
+  font-family: myFont;
+}
+
+body {
+  background-color: #f7eeed;
+  background-image: url(background.jpg);
+  background-repeat: repeat-x;
+  background-size: 225px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+/*logo picture*/
+.picture {
+  display: block;
+  position: relative;
+  left: 30px;
+  top: -170px;
+  width: 140px;
+  height: 150px;
+}
+
+.homePicture {
+  display: block;
+  width: 86.5%;
+  height: 70%;
+  opacity: 0.5;
+  margin-left: auto;
+  margin-top: -100px;
+  border-radius: 10px;
+}
+
+#homeContent {
+  position: absolute;
+  inset-block: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 190px;
+  padding-bottom: 100px;
+  margin-top: -20px;
+  min-height: 105%;
+  font-family: myFont2;
+}
+
+#browse {
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  font-size: 20px;
+  margin-left: 200px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  margin-top: -160px;
+  height: 1000px;
+  border-radius: 10px;
+  font-family: myFont1;
+}
+
+#catContent,
+#dogContent {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 200px;
+  padding-bottom: 100px;
+  margin-top: -160px;
+  min-height: 100%;
+  font-family: myFont1;
+}
+
+#findContent {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  width: 600px;
+  font-size: 20px;
+  margin-left: 400px;
+  padding-left: 30px;
+  padding-bottom: 100px;
+  margin-top: -160px;
+  min-height: 100%;
+  border-radius: 10px;
+  font-family: myFont1;
+}
+
+#giveaway {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  width: 600px;
+  font-size: 20px;
+  margin-left: 400px;
+  padding-left: 30px;
+  padding-bottom: 100px;
+  margin-top: -160px;
+  min-height: 100%;
+  border-radius: 10px;
+  font-family: myFont1;
+}
+
+@font-face {
+  font-family: myFont1;
+  src: url(SunnyspellsRegular.otf);
+}
+
+.menu1 {
+  height: 130.5%;
+  width: 200px;
+  position: absolute;
+  z-index: 1; /* Stay on top */
+  left: 0;
+  background-color: #f6e3e1;
+  overflow-x: hidden;
+  padding-top: 15px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: -5px;
+  font-size: 70px;
+  font-family: myFont1;
+}
+
+.menu2 {
+  height: 130.5%;
+  width: 200px;
+  position: absolute;
+  z-index: 1; /* Stay on top */
+  left: 0;
+  background-color: #f6e3e1;
+  overflow-x: hidden;
+  padding-top: 15px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: -60px;
+  font-size: 70px;
+  font-family: myFont1;
+}
+
+.menu {
+  height: 130.5%;
+  width: 200px;
+  position: absolute;
+  z-index: 1; /* Stay on top */
+  left: 0;
+  background-color: #f6e3e1;
+  overflow-x: hidden;
+  padding-top: 15px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: -160px;
+  font-size: 70px;
+  font-family: myFont1;
+}
+
+.menu a,
+.menu1 a,
+.menu2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+.menu a:hover,
+.menu1 a:hover,
+.menu2 a:hover {
+  color: #aec6cf;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+select {
+  padding: 5px 10px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #aec6cf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #cee1e9;
+}
+
+input[type="reset"] {
+  background-color: #aec6cf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #cee1e9;
+}
+
+form p {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.ordered {
+  justify-content: center;
+  align-items: center;
+}
+
+.indent {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+td a:hover {
+  color: #aec6cf;
+  text-decoration: double;
+}
+
+ul li {
+  text-decoration: underline;
+}
+
+.contact {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-family: myFont1;
+}
+
+.create {
+  position: relative;
+  font-size: 20px;
+  top: 20px;
+  padding-left: 600px;
+  font-family: myFont1;
+}
+
+#passwordReq li,
+#nameReq li {
+  padding-left: 0px;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  padding: 5px;
+  background-color: white;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.main {
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+#outputDate {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  position: relative;
+  top: -20px;
+  font-family: myFont1;
+}
+
+hr.line {
+  border-top: 3px dotted black;
+  width: 100%;
+}
+
+#british {
+  display: block;
+  width: 500px;
+  margin-left: 500px;
+  position: absolute;
+  top: 240px;
+}
+
+#britishbutton {
+  display: block;
+  width: 110px;
+  height: 40px;
+  margin-left: 500px;
+  position: absolute;
+  top: 370px;
+}
+
+#bulldog {
+  display: block;
+  width: 500px;
+  margin-left: 500px;
+  position: absolute;
+  top: 570px;
+}
+
+#bulldogbutton {
+  display: block;
+  width: 110px;
+  height: 40px;
+  margin-left: 500px;
+  position: absolute;
+  top: 700px;
+}
+
+#chiwawa {
+  display: block;
+  width: 500px;
+  margin-left: 500px;
+  position: absolute;
+  top: 900px;
+}
+
+#chiwawabutton {
+  display: block;
+  width: 110px;
+  height: 40px;
+  margin-left: 500px;
+  position: absolute;
+  top: 1055px;
+}
+
+button {
+  background-color: #aec6cf;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: myFont1;
+}
+
+button:hover {
+  background-color: #cee1e9;
+}

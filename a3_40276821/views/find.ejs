@@ -1,0 +1,66 @@
+<%- include('partial/header') %>
+<main>
+  <div id="menu" class="menu">
+    <a href="/home">Home</a>
+    <hr class="thinLine" />
+    <a href="/find">Find a dog/cat</a>
+    <hr class="thinLine" />
+    <a href="/dog">Dog Care</a>
+    <hr class="thinLine" />
+    <a href="/cat">Cat Care</a>
+    <hr class="thinLine" />
+    <a href="/giveawaylogin"> Have a pet to give away</a>
+    <hr class="thinLine" />
+    <a href="/contact">Contact Us</a>
+    <hr class="thinLine" />
+    <a href="/create">Create an account</a>
+    <hr class="thinLine" />
+    <a href="/logout">Log Out</a>
+  </div>
+
+  <div id="findContent" class="content">
+    <h2>Find a dog/cat</h2>
+    <form name="myForm" onsubmit="return false">
+      <p>Type of pet:</p>
+      <input type="radio" id="dog" name="name" value="Dog" />
+      <label for="dog">Dog</label>
+      <input type="radio" id="cat" name="name" value="Cat" />
+      <label for="cat">Cat</label> <br />
+      <p>Breed:</p>
+      <input type="radio" id="breed1" name="breed" />
+      <label for="breed1">British Short Hair</label>
+      <input type="radio" id="breed2" name="breed" />
+      <label for="breed2">Bulldog</label> <br />
+      <input type="radio" id="breed3" name="breed" />
+      <label for="breed3">Mix breed</label>
+      <p>Preferred age of animals:</p>
+      <select name="age" id="age">
+        <option value="none">Choose an age</option>
+        <option value="0-1">0-1</option>
+        <option value="1-3">1-3</option>
+        <option value="3-5">3-5</option>
+        <option value="5+">5+</option>
+      </select>
+      <p>Preferred gender:</p>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+      <p>Are you looking for a pet that needs to get along with:</p>
+      <input type="checkbox" id="children" name="children" />
+      <label for="children">Children</label>
+      <input type="checkbox" id="otherdogs" name="otherdogs" />
+      <label for="otherdogs">Other dogs</label>
+      <input type="checkbox" id="othercats" name="othercats" />
+      <label for="othercats">Other cats</label><br />
+      <input type="checkbox" id="none" name="none" />
+      <label for="none">None</label>
+      <br />
+      <br />
+      <br />
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" onclick="validateFind()" />
+    </form>
+  </div>
+</main>
+<%- include('partial/footer') %>

@@ -1,0 +1,2 @@
+1:alex:cat:Bulldog:1-3:male:get along with other dogs:my cat is cute:Duong:Alex:dtphong2015@gmail.com
+2:alex:dog:British Short Hair:5+:female:get along with other dogs,get along with other cats:my dog is cute:Duong:Alex:dtphong2015@gmail.com
